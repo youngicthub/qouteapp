@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster+Two&display=swap');
+ 
+body{
+  background: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.logoIMG{
+  position: absolute;
+  top: 20px;
+}
+.logoIMG img{
+  width: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App h2{
+  color: #fff;
+  font-size: 30px;
+}
+.quote{
+  background: url(./asset/bg.jpg);
+  background-size: cover;
+  width: 450px;
+  height: fit-content;
+  border-radius: 3rem;
+  padding: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border-radius: 4rem 4rem 0 0;  ; */
+}
+
+.quote h2{
+  color: #fff;
+  font-size:3rem;
+  font-family: 'Lobster Two', cursive;
+}
+
+.quote small{
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+}
+
+.btn {
+	display: block;
+	border: 2px solid #008CBA;
+	background: transparent;
+	padding: 10px 15px;
+	color: #008CBA;
+	font-size: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	/* transition: background 1s, color 1s; */
+}
+
+.btn:active{
+	background: #008CBA;
+  /* transition: 3s; */
+	color: #fff;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.down-GenBTN{
+  display: flex; 
+  justify-content: space-around;
+}
+.share-buttons{
+  display: flex;
+  top: 20px;
+}
+
+
+.btnShare{
+  position: absolute;
+  top: 60px;
+  right: 300px;
+  border: 2px solid #008CBA;
+	background: transparent;
+	padding: 10px 15px;
+	color: #008CBA;
+	font-size: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+}
+.btnShare1{
+  position: absolute;
+  top: 60px;
+  left: 300px;
+  border: 2px solid #008CBA;
+	background: transparent;
+	padding: 10px 15px;
+	color: #008CBA;
+	font-size: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+}
+
+.btnDownlaod{
+  margin-top: 5px;
+  border: 2px solid #008CBA;
+	background: transparent;
+	padding: 10px 15px;
+	color: #008CBA;
+	font-size: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+}
+
+.deve{
+  margin-top: 3%;
+  color: #fff;
+  margin-bottom: -10px;
+}
+
+
+
+@media (max-width: 768px) {
+  body{
+    background: hsl(0, 0%, 0%);
+    padding: 0;
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App{
+    width: 95%;   
+    margin-top: 45%; 
+  }
+  .logoIMG{
+    position: absolute;
+    top: 40px;
+  }
+  .logoIMG img{
+    width: 80px;
+  }
+
+  .deve{
+    margin-top: 35%;
+  }
+  .quote{
+    margin-top: -10%;
+    margin: 5px;
+    width: 80%;
+    height: 100px;
+    background: url(./asset//port2.jpg);
+    background-size: cover;
+  }
+
+
+
+  .btn{
+    font-size: 16px;
+    /* padding: 10px 15px; */
+  }
+
+  .btnDownlaod{
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  .btnShare {
+    right: 5px;
+    top: 120px;
+    padding: 10px 15px;
+	  font-size: 14px;
+   
+  }
+  
+  .btnShare1{
+    left: 5px;
+    top: 120px;
+    font-size: 14px;
+  }
+
+  .quote h2{
+    font-size: 20px;
   }
 }
+ 
